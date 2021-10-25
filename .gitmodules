@@ -1,0 +1,3 @@
+[submodule "src/hinglish-hindi-wsd/indic_tagger"]
+	path = src/hinglish-hindi-wsd/indic_tagger
+	url = https://github.com/praatibhsurana/indic_tagger.git
