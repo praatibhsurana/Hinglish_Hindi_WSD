@@ -79,3 +79,7 @@ pip install hindiwsd
 >>> from hindiwsd import wsd  
 >>> print(wsd.preprocess_transliterate('aaj achha din hai'))   
 ```
+
+### Feel free to reach out to us for more information!
+- [Praatibh Surana](https://github.com/praatibhsurana)
+- [Mirza Yusuf](https://github.com/YusufBaig7)
