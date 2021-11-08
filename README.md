@@ -45,7 +45,8 @@ pip install hindiwsd
 - [hi.pkl](https://github.com/praatibhsurana/Hinglish_Hindi_WSD/blob/main/src/hinglish-hindi-wsd/hi.pkl)
 - [crf.pos.utf.model](https://github.com/praatibhsurana/Hinglish_Hindi_WSD/blob/main/src/hinglish-hindi-wsd/crf.pos.utf.model)
 
-2) **A small change will need to be made to iwn.py from the pyiwn library before using our package**
+2) **A small change will need to be made to iwn.py from the pyiwn library before using our package** <br> 
+**(The patch was merged to the original repo, YOU CAN SKIP THIS STEP)**
 - There is a missing try-catch block in iwn.py that might cause our package to crash 
 - Here's a quick fix, use our patched [iwn.py](https://github.com/praatibhsurana/pyiwn/blob/patch-1/pyiwn/iwn.py) instead. Copy it's contents and replace it with the original iwn.py. 
 - The path to the original iwn.py would be **path-to-your-env-or-python-folder/lib/site-packages/pyiwn/iwn.py**
