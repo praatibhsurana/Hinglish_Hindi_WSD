@@ -44,14 +44,8 @@ pip install hindiwsd
 <br>
 
 ## 🗒️ NOTE
-1) **Use our pretrained models for POS tagging and Hindi spell correction to ensure hindiwsd works**
+1) **A small change will need to be made to iwn.py from the pyiwn library before using our package** <br> 
 
-- [hi.pkl](https://github.com/praatibhsurana/Hinglish_Hindi_WSD/blob/main/src/hinglish-hindi-wsd/hi.pkl)
-- [crf.pos.utf.model](https://github.com/praatibhsurana/Hinglish_Hindi_WSD/blob/main/src/hinglish-hindi-wsd/crf.pos.utf.model) <br>
-**Download these models and paste them in the directory in which you are running your Python scripts** <br><br>
-
-2) **A small change will need to be made to iwn.py from the pyiwn library before using our package** <br> 
-**(The patch was merged to the original repo, YOU CAN SKIP THIS STEP)**
 - There is a missing try-catch block in iwn.py that might cause our package to crash 
 - Here's a quick fix, use our patched [iwn.py](https://github.com/praatibhsurana/pyiwn/blob/patch-1/pyiwn/iwn.py) instead. Copy it's contents and replace it with the original iwn.py. 
 - The path to the original iwn.py would be **path-to-your-env-or-python-folder/lib/site-packages/pyiwn/iwn.py**
@@ -59,7 +53,10 @@ pip install hindiwsd
 <br>
 
 ## 📄 CUSTOM DATASET FOR ENHANCED LESK'S ALGORITHM
-**The custom dataset is available [here](https://github.com/praatibhsurana/Hinglish_Hindi_WSD/tree/main/dataset)**
+**The custom dataset is available [here](https://github.com/praatibhsurana/Hinglish_Hindi_WSD/tree/main/dataset).**
+- Here is a preview of what it looks like <br><br>
+![image](https://user-images.githubusercontent.com/43675042/150093498-056089b4-a957-4c7e-8f32-875d296a353d.png)
+
 
 <br>
 
