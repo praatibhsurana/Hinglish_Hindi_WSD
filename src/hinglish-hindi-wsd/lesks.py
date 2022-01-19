@@ -13,6 +13,11 @@ import nltk
 from hindiwsd import wsd
 import pandas as pd
 
+from twisted.python.modules import getModule
+
+moduleDirectory = getModule("hindiwsd").filePath.parent()
+dataset = str(moduleDirectory.child("Hindi_WSD_Dataset - Sheet1.tsv"))[10:-2]
+
 def lesk(word, postag, sentence):
 
     # sentence - raw hinglish sentence to be transliterated to hindi and wsd carried out
@@ -30,7 +35,7 @@ def lesk(word, postag, sentence):
     
     def extra_overlap(ambword : str, input_sent : str):
 
-        df = pd.read_csv('./Hindi_WSD_Dataset - Sheet1.tsv', sep = '\t', encoding='utf8')
+        df = pd.read_csv(dataset, sep = '\t', encoding='utf8')
         #df.head()
         #print(ambword)
 
@@ -155,3 +160,7 @@ def lesk(word, postag, sentence):
 
     else:
         print(word, "is not in wordnet")
+
+
+
+
