@@ -8,11 +8,15 @@ import sys
 from nltk.tag import tnt
 from nltk.corpus import indian
 import nltk
-from hipos import pos_pipeline
+from hindiwsd.hipos import pos_pipeline
 
+from twisted.python.modules import getModule
+
+moduleDirectory = getModule("hindiwsd").filePath.parent()
+spello_model = str(moduleDirectory.child("hi.pkl"))[10:-2]
 # Loading spell correction model
 sp = SpellCorrectionModel(language='hi')
-sp.load('./src/hi.pkl')
+sp.load(spello_model)
 
 # Stopwords
 # words = []
@@ -87,7 +91,7 @@ def POS_tagger(sentence):
 
     tagged = pos_pipeline(sentence)
 
-    print("Tagged:", tagged)
+    # print("Tagged:", tagged)
 
     words = []
     tags = []
