@@ -47,7 +47,7 @@ pip install hindiwsd
 1) **A small change will need to be made to iwn.py from the pyiwn library before using our package** <br> 
 
 - There is a missing try-catch block in iwn.py that might cause our package to crash 
-- Here's a quick fix, use our patched [iwn.py](https://github.com/praatibhsurana/pyiwn/blob/patch-1/pyiwn/iwn.py) instead. Copy it's contents and replace it with the original iwn.py. 
+- Here's a quick fix, use our patched [iwn.py](https://github.com/praatibhsurana/pyiwn/blob/patch-1/pyiwn/iwn.py) instead. Copy it's contents and replace the original iwn.py. 
 - The path to the original iwn.py would be **path-to-your-env-or-python-folder/lib/site-packages/pyiwn/iwn.py**
 
 <br>
