@@ -94,6 +94,26 @@ pip install hindiwsd
 >>> print(wsd.preprocess_transliterate('aaj achha din hai'))   
 ```
 
+## Citing
+
+If you publish work that uses hindiwsd, please cite the hindiwsd paper, as follows:
+
+```latex
+@InProceedings{yusuf-surana-sharma:2022:WILDRE6,
+  author    = {Yusuf, Mirza  and  Surana, Praatibh  and  sharma, Chethan},
+  title     = {HindiWSD: A package for word sense disambiguation in Hinglish \& Hindi},
+  booktitle      = {Proceedings of The WILDRE-6 Workshop within the 13th Language Resources and Evaluation Conference},
+  month          = {June},
+  year           = {2022},
+  address        = {Marseille, France},
+  publisher      = {European Language Resources Association},
+  pages     = {18--23},
+  abstract  = {A lot of commendable work has been done, especially in high resource languages such as English, Spanish, French, etc. However, work done for Indic languages such as Hindi, Tamil, Telugu, etc is relatively less due to difficulty in finding relevant datasets, and the complexity of these languages. With the advent of IndoWordnet, we can explore important tasks such as word sense disambiguation, word similarity, and cross-lingual information retrieval, and carry out effective research regarding the same. In this paper, we worked on improving word sense disambiguation for 20 of the most common ambiguous Hindi words by making use of knowledge-based methods. We also came up with â€œhindiwsdâ€, an easy-to-use framework developed in Python that acts as a pipeline for transliteration of Hinglish code-mixed text followed by spell correction, POS tagging, and word sense disambiguation of Hindi text. We also curated a dataset of these 20 most used ambiguous Hindi words. This dataset was then used to enhance a modified Lesk's algorithm and more accurately carry out word sense disambiguation. We achieved an accuracy of about 71\% using our customized Leskâ€™s algorithm which was an improvement to the accuracy of about 34\% using the original Leskâ€™s algorithm on the test set.},
+  url       = {https://aclanthology.org/2022.wildre6-1.4}
+}
+```
+
+
 ### Feel free to reach out to us for more information!
 - [Praatibh Surana](https://github.com/praatibhsurana)
 - [Mirza Yusuf](https://github.com/YusufBaig7)
