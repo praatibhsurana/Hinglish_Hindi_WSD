@@ -1,0 +1,14 @@
+function LESK (word, sentence) returns best sense of word
+	best sense <- most frequent use for word
+	max_overlap <- 0
+	context <- set of words in sentence
+	intersection, synset_no, meaning = EXTRAOVERLAP (word, sentence)
+	for each sense in sense of word do
+		signature <- set of words in the gloss and examples of sense
+overlap <- COMPUTEOVERLAP (signature, context)
+if overlap > max_overlap then
+max_overlap <- overlap
+	if  intersection > max_overlap and intersection > 0 do
+		best_sense <- word.synset_no
+end return (best_sense)
+
