@@ -16,7 +16,7 @@
   </a>
 </p>  
   
-<p> 📌 A pipeline for transliteration of Hinglish code mixed data to Hindi Devanagari script, spell correction, POS tagging and word sense disambiguation of the Hindi Devanagari script.       
+<p> 📌 A python package for transliteration of Hinglish code mixed data to Hindi Devanagari script, spell correction, POS tagging and word sense disambiguation of the Hindi Devanagari script.       
 </p>  
 
 <p>  
