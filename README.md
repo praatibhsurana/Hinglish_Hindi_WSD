@@ -1,3 +1,5 @@
+Note: This library is no longer being maintained. Please use Python >=3.6 and <=3.8.5 to ensure there are no version related issues.
+
 <p>  
   <a href="https://github.com/praatibhsurana/Hinglish_Hindi_WSD/stargazers">  
     <img src="https://img.shields.io/github/stars/praatibhsurana/hinglish_hindi_wsd.svg?colorA=orange&colorB=orange&logo=github"  
